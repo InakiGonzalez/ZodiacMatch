@@ -6,8 +6,13 @@ In this project I will analyze a dataset provided by Codecademy in order to put 
 ## Libraries Used
 Pandas, Scikit-Learn, Seaborn, Confusion Matrix
 
-## Project Development
-First, I created some visualizations using Seaborn charts that gave me a solid first glance at how data is distributed in the dataset. After observing how different variables (age, sex, income, gender, diet habits, etc.) are distirbuted, I started to consider which models would be good to use for prediction and decided that KNN, Decision Trees and Logistic Regression would be good choices considering they are all classifiers but work in different ways. This would give me the opportunity to analyze the results from all the models and realize what makes one model better than the others for this specific case.
+## Data Visualization and Data Engineering
+First, I created some visualizations using Seaborn charts that gave me a solid first glance at how data is distributed in the dataset. After observing how different variables (age, sex, income, gender, diet habits, etc.) are distirbuted, I started to organize and clean my data. I observed there were a lot of missing values for some of the features as well as too many features in the whole dataset. Then, after selecting my predictors and my output variable, I was able to start the training/testing phase.
+
+I began to consider which models would be good for this project and decided that KNN, Decision Trees and Logistic Regression would be good choices considering they are all classifiers but work in different ways. This would give me the opportunity to analyze the results from all the models and realize what makes one model better than the others for this specific case.
 
 
 ## Model Training and Testing
+Having all my data ready to be used to train and test my models, I started to do so with Logistic Regression, then KNN and lastly Decision Trees. They all showed different outputs and scores on their predictions. This worked as a guide for finding the best model. However, we should be careful when pondering our results, because initially it appeared as if DTs were the best-performing model when it was actually overfitting.
+
+Further tests and hyperparameter tuning showed that 
